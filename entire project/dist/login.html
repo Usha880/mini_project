@@ -117,13 +117,17 @@
             }
         }
     
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            if (validateLoginForm()) {
-                // Redirect to index.html
-                window.location.href = 'index.html';
-            }
-        });
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+
+    if (validateLoginForm()) {
+        // Simulate login validation (replace this with backend validation in the future)
+        setTimeout(function() {
+            window.location.href = "index.html"; // Redirect to home page
+        }, 500); // Add a slight delay to simulate processing
+    }
+});
+
     </script>
 </body>
 </html>
